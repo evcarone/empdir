@@ -1,11 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import HelloReact from "./components/HelloReact";
-import DataTable from "./components/DataTable";
+import Header from "./components/Header";
+import Wrapper from "./components/Wrapper";
 import './App.css';
 
 function App() {
-  return <HelloReact />;
+  return (
+  <div>
+  <Header />;
+  <Wrapper />;
+  </div>
+  )
 }
 
 

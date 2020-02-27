@@ -1,9 +1,12 @@
 import React from 'react'
+import { Container } from 'reactstrap';
+import { Table } from 'reactstrap';
 import DataBody from './DataBody'
 
 const DataTable = ({users, handleNameSort, search}) => {
   return (
-    <table>
+      <Container className="themed-container" fluid="md">
+    <Table striped>
       <thead>
         <tr>
           <th onClick={handleNameSort}>Name</th>
@@ -12,7 +15,8 @@ const DataTable = ({users, handleNameSort, search}) => {
         </tr>
       </thead>
       <DataBody users={users} search={search}/>
-    </table>
+    </Table>
+    </Container>
   )
 }
 
